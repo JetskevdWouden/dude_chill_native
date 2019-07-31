@@ -7,6 +7,7 @@ import { GameContainer } from './screens/GameContainer';
 import SignUp from './screens/SignUp'
 import Timer from './screens/Timer'
 import SliderBar from './screens/Slider'
+import ScoresContainer from './screens/ScoresContainer'
 
 export default class App extends React.Component {
   render() {
@@ -17,7 +18,8 @@ export default class App extends React.Component {
           {/* <GameContainer /> */}
           {/* <SignUp /> */}
           {/* <Timer /> */}
-          <SliderBar />
+          {/* <SliderBar /> */}
+          <ScoresContainer />
         </View>
       </Provider>
     );
