@@ -45,7 +45,7 @@ export default class Timer extends React.Component {
 const styles = StyleSheet.create({
     container: {
         alignItems: "center",
-        marginBottom: 20
+        marginBottom: 15
     },
     timeContainer: {
         width: "90%",
@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
         borderColor: "#8730ff",
         borderWidth: 3,
         borderRadius: 0,
-        marginTop: 50,
+        marginTop: 5,
         justifyContent: "center",
     },
     inner: {

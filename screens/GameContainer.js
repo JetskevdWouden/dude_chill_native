@@ -75,10 +75,10 @@ export class GameContainer extends React.Component {
                     />
                     <Text style={styles.stress}>Stress: {Math.floor(this.state.value * 10)}</Text>
                 </View>
-                {/* <View style={styles.icons}>
+                <View style={styles.icons}>
                     <Image style={styles.image1} source={{ uri: `https://emojis.slackmojis.com/emojis/images/1542340469/4974/notinterested.gif?1542340469` }} />
                     <Image style={styles.image2} source={{ uri: `https://emojis.slackmojis.com/emojis/images/1542340461/4964/cry.gif?1542340461` }} />
-                </View> */}
+                </View>
                 <Timer clickNext={this.clickNext} />
                 <View style={{ alignItems: 'center', justifyContent: 'center' }}>
                     <Button color="#090c54" style={styles.button} onPress={() => this.clickNext()} title="   NEXT   " />
@@ -117,6 +117,7 @@ const styles = StyleSheet.create({
 
     },
     icons: {
+        flexDirection:"row",
         justifyContent: "space-between",
         alignItems: "center"
     },
@@ -124,13 +125,13 @@ const styles = StyleSheet.create({
         width: 60,
         height:60,
         // justifyContent:"flex-start",
-        margin: 20
+        margin: 10
     },
     image2: {
         width: 60,
         height:60,
         // justifyContent:"flex-start",
-        margin: 20
+        margin: 10
     }
 })
 

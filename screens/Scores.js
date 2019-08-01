@@ -1,16 +1,14 @@
 import React from 'react';
-import { View, Text, Image, ScrollView } from 'react-native';
+import { View, Text, Image, ScrollView, StyleSheet } from 'react-native';
 // import {List, ListItem} from 'react-native-elements'
 
 export default function Scores(props) {
-    console.log("PROPS?", props)
     const scores = props.scores             //users -> id, username, stress
 
     const list = (scores) => {
-        console.log("LIST IS RUNNING", scores)
         return scores.map(user => {
             return (
-                <View>
+                <View style={styles.row}>
                     <Text key={user.id}>{user.username} --> {user.stress}</Text>
                 </View>
             )
@@ -23,9 +21,20 @@ export default function Scores(props) {
         )
     } else {
         return (
-            <ScrollView>
+            <ScrollView style={styles.list}>
                 {list(scores)}
             </ScrollView>
         )
     }
 }
+
+const styles = StyleSheet.create({
+    list: {
+        padding: 10
+    },
+    row: {
+        fontSize: 20,
+        margin: 3,
+        color: "#8730ff"
+    }
+})

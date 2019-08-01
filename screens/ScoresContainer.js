@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Button } from 'react-native';
+import { View, Text, Button, StyleSheet } from 'react-native';
 import { connect } from 'react-redux';
 import { getScores } from '../actions/scores'
 import Scores from './Scores'
@@ -14,13 +14,11 @@ export class ScoreContainer extends React.Component {
     baseUrl = 'https://evening-escarpment-40999.herokuapp.com'
 
     componentDidMount() {
-        console.log("IM RUNNING")
         // this.props.getScores()
         this.getScores()
     }
 
     getScores() {
-        console.log("SIGNUP ACTION CREATOR")
         request
             .get(`${this.baseUrl}/all-users`)
             .then(response => {
@@ -35,10 +33,9 @@ export class ScoreContainer extends React.Component {
 
     render() {
         return (
-            <View>
-                {/* <Scores scores={this.props.scores} /> */}
+            <View style={styles.container}>
                 <Scores scores={this.state.scores} />
-                <Button onPress={() => Actions.home()} title="GO HOME" />
+                <Button color="#090c54" onPress={() => Actions.home()} title="  GO HOME  " />
             </View>
         )
     }
@@ -50,5 +47,13 @@ const mapStateToProps = state => {
         scores: state.scores
     }
 }
+
+const styles = StyleSheet.create({
+    container: {
+        padding: 5,
+        alignItems: 'center',
+        justifyContent: 'center'
+    }
+})
 
 export default connect(mapStateToProps, { getScores })(ScoreContainer)
