@@ -19,8 +19,6 @@ export default class App extends React.Component {
   render() {
     return (
       <Provider store={store}>
-        {/* <View style={styles.container}> */}
-        {/* <HomeScreen /> */}
         <Router>
           <Stack key="root">
             <Scene key="home" component={HomeScreen} title="Home" initial />
@@ -32,14 +30,6 @@ export default class App extends React.Component {
             <Scene key="scores" component={ScoresContainer} title="Scores" />
           </Stack>
         </Router>
-          {/* <Text>Hello!</Text> */}
-          {/* <HomeScreen /> */}
-          {/* <GameContainer /> */}
-          {/* <SignUp /> */}
-          {/* <Timer /> */}
-          {/* <SliderBar /> */}
-          {/* <ScoresContainer /> */}
-        {/* </View> */}
       </Provider>
     );
   }

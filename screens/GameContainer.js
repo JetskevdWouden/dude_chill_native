@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Button, Slider } from 'react-native';
+import { View, Text, Button, Slider, StyleSheet, Image } from 'react-native';
 import { connect } from 'react-redux';
 import { getGame } from '../actions/game'
 import { addScore } from '../actions/scores'
@@ -63,20 +63,26 @@ export class GameContainer extends React.Component {
 
     render() {
         return (
-            <View>
-                <Text>THE GAME</Text>
-                <Game game={this.props.game[this.state.index]} />
+            <View style={styles.container}>
+                <Game style={styles.game} game={this.props.game[this.state.index]} />
                 {/* <Game game={this.state.game[this.state.index]} /> */}
-                <View style={{ flex: 1, alignItems: 'stretch', justifyContent: 'center' }}>
+                <View style={{ flex: 1, alignItems: 'stretch', justifyContent: 'center', margin: 10 }}>
                     <Slider
                         value={this.state.value}
                         // onValueChange={stress => this.setState({ stress })}
                         onValueChange={value => this.setState({ value })}
+                        style={styles.slider}
                     />
-                    <Text>Stress: {Math.floor(this.state.value * 10)}</Text>
+                    <Text style={styles.stress}>Stress: {Math.floor(this.state.value * 10)}</Text>
                 </View>
+                {/* <View style={styles.icons}>
+                    <Image style={styles.image1} source={{ uri: `https://emojis.slackmojis.com/emojis/images/1542340469/4974/notinterested.gif?1542340469` }} />
+                    <Image style={styles.image2} source={{ uri: `https://emojis.slackmojis.com/emojis/images/1542340461/4964/cry.gif?1542340461` }} />
+                </View> */}
                 <Timer clickNext={this.clickNext} />
-                <Button onPress={() => this.clickNext()} title="NEXT" />
+                <View style={{ alignItems: 'center', justifyContent: 'center' }}>
+                    <Button color="#090c54" style={styles.button} onPress={() => this.clickNext()} title="   NEXT   " />
+                </View>
             </View>
         )
     }
@@ -88,5 +94,44 @@ const mapStateToProps = state => {
         user: state.user
     }
 }
+
+const styles = StyleSheet.create({
+    button: {
+        width: 200,
+        alignItems: "center",
+        marginTop: 50,
+
+    },
+    game: {
+        alignItems: "center",
+        padding: 3,
+        borderColor: "#8730ff",
+        borderWidth: 5,
+    },
+    slider: {
+        height: 10
+    },
+    stress: {
+        fontSize: 25,
+        margin: 5,
+
+    },
+    icons: {
+        justifyContent: "space-between",
+        alignItems: "center"
+    },
+    image1: {
+        width: 60,
+        height:60,
+        // justifyContent:"flex-start",
+        margin: 20
+    },
+    image2: {
+        width: 60,
+        height:60,
+        // justifyContent:"flex-start",
+        margin: 20
+    }
+})
 
 export default connect(mapStateToProps, { getGame, addScore })(GameContainer)

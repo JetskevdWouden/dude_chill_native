@@ -19,12 +19,13 @@ export default class Timer extends React.Component {
         });
         Animated.timing(this.anim, {
             toValue: 100,
-            duration: 15000,
+            duration: 30000,
         }).start();
     }
 
     render() {
         return (
+            <View style={styles.container}>
                 <View style={styles.timeContainer}>
                     <Animated.View
                         style={[
@@ -33,33 +34,40 @@ export default class Timer extends React.Component {
                     />
                     <Animated.Text style={styles.label}>
                         {/* {this.state.progressStatus}s */}
-                        time
+                        TIME
             </Animated.Text>
                 </View>
+            </View>
         )
     }
 }
 
 const styles = StyleSheet.create({
+    container: {
+        alignItems: "center",
+        marginBottom: 20
+    },
     timeContainer: {
-        width: "100%",
+        width: "90%",
         height: 40,
         padding: 3,
-        borderColor: "#FAA",
+        borderColor: "#8730ff",
         borderWidth: 3,
-        borderRadius: 30,
-        marginTop: 200,
+        borderRadius: 0,
+        marginTop: 50,
         justifyContent: "center",
     },
     inner: {
         width: "100%",
         height: 30,
-        borderRadius: 15,
-        backgroundColor: "green",
+        borderRadius: 0,
+        backgroundColor: "red",
+        justifyContent: "center",
+
     },
     label: {
         fontSize: 23,
-        color: "black",
+        color: "#3037ff",
         position: "absolute",
         zIndex: 1,
         alignSelf: "center",

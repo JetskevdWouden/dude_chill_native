@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Image } from 'react-native';
+import { View, Text, Image, StyleSheet } from 'react-native';
 
 export default function Game(props) {
     console.log("PROPS", props)
@@ -11,12 +11,29 @@ export default function Game(props) {
         )
     } else {
         return (
-            <View>
+            <View style={styles.continer}>
                 <Image
-                    style={{ width: 400, height: 400 }}
+                    style={styles.image}
                     source={{uri: `${game.url}`}}
                 />
             </View>
         )
     }
 }
+
+const styles = StyleSheet.create({
+    container: {
+        alignContent: "center"
+    },
+    image :{
+        width: 400,
+        height: 450,
+        borderWidth: 30,
+        borderColor: "red",
+        marginLeft: 5,
+        marginTop: 20,
+        marginBottom: 30,
+        padding: 10
+    }
+
+})
