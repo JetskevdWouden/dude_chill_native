@@ -10,7 +10,7 @@ export class PlayerScore extends React.Component {
       <View style={styles.container}>
         <Text style={styles.title}>Your STRESS Score</Text>
         <Text style={styles.title}>||{this.props.user.username}||</Text>
-        <Text style={styles.title}>{this.props.user.stress}</Text>
+        <Text style={styles.title}>{this.props.user.stress} out of 80</Text>
         <Image style={styles.image} source={{ uri: `https://emojis.slackmojis.com/emojis/images/1471119455/979/deal_with_it_parrot.gif?1471119455` }} />
         <Button color="#090c54" onPress={() => Actions.scores()} title="  ALL SCORES  " />
       </View>
@@ -39,12 +39,10 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   subtitle: {
-    fontSize: 30,
+    fontSize: 20,
     fontWeight: "bold",
-    margin: 10,
+    margin: 5,
     color: "#090c54",
-    alignItems: 'center',
-    justifyContent: 'center',
   },
   image: {
     alignItems: 'center',
