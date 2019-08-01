@@ -17,9 +17,9 @@ export default class App extends React.Component {
           <Text>Hello!</Text>
           {/* <GameContainer /> */}
           {/* <SignUp /> */}
-          {/* <Timer /> */}
+          <Timer />
           {/* <SliderBar /> */}
-          <ScoresContainer />
+          {/* <ScoresContainer /> */}
         </View>
       </Provider>
     );

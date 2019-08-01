@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Image } from 'react-native';
+import { View, Text, Image, ScrollView } from 'react-native';
 // import {List, ListItem} from 'react-native-elements'
 
 export default function Scores(props) {
@@ -23,9 +23,9 @@ export default function Scores(props) {
         )
     } else {
         return (
-            <View>
+            <ScrollView>
                 {list(scores)}
-            </View>
+            </ScrollView>
         )
     }
 }
