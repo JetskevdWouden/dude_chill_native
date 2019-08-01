@@ -19,29 +19,29 @@ export default class Timer extends React.Component {
         });
         Animated.timing(this.anim, {
             toValue: 100,
-            duration: 4000,
+            duration: 15000,
         }).start();
     }
 
     render() {
         return (
-            <View style={styles.container}>
-                <Animated.View
-                    style={[
-                        styles.inner, { width: this.state.progressStatus + "%" },
-                    ]}
-                />
-                <Animated.Text style={styles.label}>
-                    {/* {this.state.progressStatus}s */}
-                    time
+                <View style={styles.timeContainer}>
+                    <Animated.View
+                        style={[
+                            styles.inner, { width: this.state.progressStatus + "%" },
+                        ]}
+                    />
+                    <Animated.Text style={styles.label}>
+                        {/* {this.state.progressStatus}s */}
+                        time
             </Animated.Text>
-            </View>
+                </View>
         )
     }
 }
 
 const styles = StyleSheet.create({
-    container: {
+    timeContainer: {
         width: "100%",
         height: 40,
         padding: 3,

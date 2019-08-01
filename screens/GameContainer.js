@@ -47,14 +47,12 @@ export class GameContainer extends React.Component {
             this.setState({
                 index: this.state.index + 1
             })
-            console.log("VALUE", this.state.value, "STRESS" ,this.state.stress)
             this.setState({
                 stress: this.state.stress + this.state.value,
             })
             this.setState({
                 value: 0
             })
-            console.log("VALUE", this.state.value, "STRESS" ,this.state.stress)
         } else {
             const score = Math.floor(this.state.stress * 10)
             this.props.addScore(this.props.user.id, score)
