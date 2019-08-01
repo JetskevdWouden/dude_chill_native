@@ -4,8 +4,7 @@ import { connect } from 'react-redux';
 import { getScores } from '../actions/scores'
 import Scores from './Scores'
 import * as request from 'superagent'
-
-// import * as request from 'superagent'
+import { Actions } from 'react-native-router-flux';
 
 export class ScoreContainer extends React.Component {
     state = {
@@ -39,7 +38,7 @@ export class ScoreContainer extends React.Component {
             <View>
                 {/* <Scores scores={this.props.scores} /> */}
                 <Scores scores={this.state.scores} />
-
+                <Button onPress={() => Actions.home()} title="GO HOME" />
             </View>
         )
     }

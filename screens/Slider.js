@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 import { Slider } from 'react-native-elements';
-import { View, Text } from 'react-native'
+import { View, Text } from 'react-native';
 
 export default class SliderBar extends React.Component {
     state = {

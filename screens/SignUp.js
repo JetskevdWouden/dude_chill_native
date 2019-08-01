@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text, TouchableHighlight, Button, TextInput, Alert } from 'react-native';
 import { connect } from 'react-redux'
 import { signUp } from '../actions/user'
+import { Actions } from 'react-native-router-flux';
 
 export class SignUp extends React.Component {
     state = {
@@ -10,6 +11,20 @@ export class SignUp extends React.Component {
 
     onChangeText = (key, val) => {
         this.setState({ [key]: val })
+    }
+
+    pressHandler() {
+        this.props.signUp(this.state.username)
+        Alert.alert(
+            `Hey ${this.state.username}!`,
+            `...are you ready to get stressed?!`,
+            [
+                {text: 'instructions', onPress: () => Actions.instructions()},
+                {text: 'yes', onPress: () => Actions.game()},
+                {text: 'nope', onPress: () => Actions.pussy()}
+            ],
+            {cancelable: false}
+        )
     }
 
     render() {
@@ -25,7 +40,7 @@ export class SignUp extends React.Component {
                 />
                 <Button
                     title='Sign Up'
-                    onPress={() => this.props.signUp(this.state.username)}
+                    onPress={() => this.pressHandler()}
                 />
             </View>
         )

@@ -11,23 +11,13 @@ export const setGame = (game) => {
     }
 }
 
-// export const getGame = () => dispatch => {
-//     console.log("GETGAME IS RUNNING")
-//     request
-//         .get(`${baseUrl}/content`)
-//         .then(response => {
-//             console.log("RESPONSE", response.body)
-//             dispatch(setGame(response.body.content))
-//         })
-//         .catch(console.error)
-// }
-
-export function getGame() {
-    const url = `${baseUrl}/content`
-    return async function(dispatch){
-        const response = await request(url)
-        const {content} = response.body
-        dispatch(setGame(content))
-    }
-    
+export const getGame = () => dispatch => {
+    console.log("GETGAME IS RUNNING")
+    request
+        .get(`${baseUrl}/content`)
+        .then(response => {
+            console.log("RESPONSE", response.body)
+            dispatch(setGame(response.body.content))
+        })
+        .catch(console.error)
 }
