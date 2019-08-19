@@ -29,7 +29,7 @@ What I chose to do to step up to the 2.5 day "stress" challenge was to build my 
 using React Native, as my new technology. For the actual content, I decided to instead of opting for "stress relieving" , to go the other way and make an app that would be "stress inducing".
 I also wanted the app to be interactive with some sort of game element.
 The final result of all this is the "Dude, chill..." app.
-Curious? Check out the result [here](https://expo.io/@jetskevdwouden/dude_chill_0)
+Curious? Check out the result [here](https://expo.io/@jetskevdwouden/dude_chill_0).
 
 ### :pushpin: Setup
 * git clone
