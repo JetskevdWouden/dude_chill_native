@@ -3,7 +3,7 @@
 
 ## *The app to test your stress sensitivity*
 
-## ![](https://emojis.slackmojis.com/emojis/images/1450319446/49/fireball.gif?1450319446) Click [HERE](https://expo.io/@jetskevdwouden/dude_chill_) to :eyes: view && play the deployed "Dude, chill..." app on Expo. ![](https://emojis.slackmojis.com/emojis/images/1450319446/49/fireball.gif?1450319446
+## ![](https://emojis.slackmojis.com/emojis/images/1450319446/49/fireball.gif?1450319446) Click [HERE](https://expo.io/@jetskevdwouden/dude_chill_) to :eyes: view && play the deployed "Dude, chill..." app on Expo. ![](https://emojis.slackmojis.com/emojis/images/1450319446/49/fireball.gif?1450319446)
 
 ### :pushpin: What is this?
 This app is the result of a 2.5 day hackathon, part of the Codaisseur Code Academy.
