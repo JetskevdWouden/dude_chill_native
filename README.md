@@ -1,4 +1,4 @@
-# ![](https://emojis.slackmojis.com/emojis/images/1542340471/4979/thinking.gif?1542340471) Dude, chill... ![](https://emojis.slackmojis.com/emojis/images/1542340461/4964/cry.gif?1542340461)
+# ![](https://emojis.slackmojis.com/emojis/images/1450319446/49/fireball.gif?1450319446) Dude, chill... ![](https://emojis.slackmojis.com/emojis/images/1450319446/49/fireball.gif?1450319446)
 
 ## :eyes:Click [HERE](https://expo.io/@jetskevdwouden/dude_chill_) to view && play the deployed "Dude, chill..." app on Expo. :eyes:
 
