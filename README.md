@@ -1,4 +1,4 @@
-# ![](https://emojis.slackmojis.com/emojis/images/1542340471/4979/thinking.gif?1542340471 | width="5") Dude, chill... ![](https://emojis.slackmojis.com/emojis/images/1542340464/4967/facepalm.gif?1542340464 width="20")
+# ![](https://emojis.slackmojis.com/emojis/images/1542340471/4979/thinking.gif?1542340471 =10x10) Dude, chill... ![](https://emojis.slackmojis.com/emojis/images/1542340464/4967/facepalm.gif?1542340464)
 
 # :eyes:  Click [HERE](https://expo.io/@jetskevdwouden/dude_chill_) to view && play the deployed "Dude, chill..." app on Expo.  :eyes:
 
