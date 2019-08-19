@@ -1,5 +1,5 @@
 ![](https://emojis.slackmojis.com/emojis/images/1542340471/4979/thinking.gif?1542340471) 
-# Dude, chill...
+# **"Dude, chill..."**
 
 ## *The app to test your stress sensitivity*
 
