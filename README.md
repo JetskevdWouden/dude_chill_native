@@ -1,6 +1,6 @@
-# ![](https://emojis.slackmojis.com/emojis/images/1450319446/49/fireball.gif?1450319446) Dude, chill... ![](https://emojis.slackmojis.com/emojis/images/1450319446/49/fireball.gif?1450319446)
+# ![](https://emojis.slackmojis.com/emojis/images/1542340471/4979/thinking.gif?1542340471 | height=20) Dude, chill... ![](https://emojis.slackmojis.com/emojis/images/1542340464/4967/facepalm.gif?1542340464 | height=20)
 
-## :eyes:Click [HERE](https://expo.io/@jetskevdwouden/dude_chill_) to view && play the deployed "Dude, chill..." app on Expo. :eyes:
+# :eyes:  Click [HERE](https://expo.io/@jetskevdwouden/dude_chill_) to view && play the deployed "Dude, chill..." app on Expo.  :eyes:
 
 ## :information_desk_person: O-M-G, what is this?
 This app is the result of a 2,5 day hackathon, part of the Codaisseur Code Academy.
