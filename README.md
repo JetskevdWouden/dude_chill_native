@@ -7,7 +7,7 @@
 
 ## Check out the Demo below
 
-![](demo/demo.gif width=50)
+![](demo/demo.gif | width=50)
 
 ### :pushpin: What is this?
 This app is the result of a 2.5 day hackathon, part of the Codaisseur Code Academy.
