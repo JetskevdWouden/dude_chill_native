@@ -3,9 +3,9 @@
 
 ## ![](https://emojis.slackmojis.com/emojis/images/1450319446/49/fireball.gif?1450319446)*The app to test your stress sensitivity*![](https://emojis.slackmojis.com/emojis/images/1450319446/49/fireball.gif?1450319446)
 
-## Click [HERE](https://expo.io/@jetskevdwouden/dude_chill_) to :eyes: view && play the deployed "Dude, chill..." app on Expo.
+### Click [HERE](https://expo.io/@jetskevdwouden/dude_chill_) to :eyes: view && play the deployed "Dude, chill..." app on Expo.
 
-Or Check out the Demo below
+### Check out the Demo below
 
 ![](demo/demo2.gif)
 
