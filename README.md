@@ -5,7 +5,7 @@
 
 ## Click [HERE](https://expo.io/@jetskevdwouden/dude_chill_) to :eyes: view && play the deployed "Dude, chill..." app on Expo.
 
-## Check out the Demo below
+Or Check out the Demo below
 
 ![](demo/demo2.gif)
 
